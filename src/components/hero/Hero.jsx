@@ -17,13 +17,13 @@ const Hero = () => {
           <motion.span
           variants={fadeIn("right","tween",0.2,1)}
           className="primaryText">
-            Hey There, <br />
-            I'm Rohit Beniwal
+            Hey There
+            
           </motion.span>
           <motion.span
           variants={fadeIn("left","tween",0.4,1)}
-          className="secondaryText">
-            I love trying <br /> & learning new things everyday
+          className="primaryText">
+            I'm Rohit Beniwal
           </motion.span>
         </div>
 
@@ -37,9 +37,9 @@ const Hero = () => {
       </motion.div>
 
       {/* email */}
-      <a className={css.email} href="mailto:211230047@nitdelhi.ac.in">
+      {/* <a className={css.email} href="mailto:211230047@nitdelhi.ac.in">
         211230047@nitdelhi.ac.in
-      </a>
+      </a> */}
 
         {/* lowerelements */}
         <div className={css.lowerElements}>

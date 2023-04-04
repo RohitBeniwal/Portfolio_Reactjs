@@ -1,21 +1,30 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import css from './Header.module.scss'
-import {BiMenuAltRight, BiPhoneCall} from 'react-icons/bi'
+import {BiMenuAltRight} from 'react-icons/bi'
+import {TiSocialLinkedinCircular} from 'react-icons/ti'
 import {motion} from 'framer-motion'
 import {getMenuStyles, headerVariants} from '../../utils/motion'
 import useHeaderShadow from "../../hooks/useHeaderShadow";
+import useOutsideAlerter from '../../hooks/useOutsideAlerter';
 
 const header = () => {
 
+  const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow= useHeaderShadow();
+
+  useOutsideAlerter({
+    menuRef,
+    setMenuOpened,
+  });
+
   return (
     <motion.div
     initial='hidden'
     whileInView='show'
     variants={headerVariants}
     viewport={{once:false,amount:0.25}}
-    className={`paddings ${css.wrapper}`}
+    className={`bg-primary paddings ${css.wrapper}`}
     style={{boxShadow:headerShadow}}
     >
         <div className={`flexCenter innerWidth ${css.container}`}>
@@ -23,15 +32,15 @@ const header = () => {
                 Rohit Beniwal
             </div>
             <ul
+            ref={menuRef}
             style={getMenuStyles(menuOpened)}
             className={`flexCenter ${css.menu}`}>
-                <li><a href="">Services</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Testimonials</a></li>
+                <li><a href="#experties">Services</a></li>
+                <li><a href="#work">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li className={`flexCenter ${css.phone}`}>
-                   <p>+91 9602388521</p> 
-                   <BiPhoneCall size={"40px"}/>
+                  <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><TiSocialLinkedinCircular size={"40px"}/></a>
+                   
                 </li>
             </ul>
 

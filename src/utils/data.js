@@ -1,53 +1,47 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
+import {SiCodeforces,SiCodechef} from "react-icons/si"
 export const projectExperience = [
   {
     name: "Websites",
-    projects: 5,
+    details: "5 Projects",
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
-    projects: 63,
-    icon: CiMobile1,
-    bg: "#EEC048",
+    name: "CODEFORCES",
+    details: "1112 Max Rating",
+    icon: SiCodeforces,
+    bg: "#F26440",
   },
   {
-    name: "Brand Identity",
-    projects: 47,
-    icon: MdWorkspacesOutline,
-    bg: "#F26440",
+    name: "CODECHEF",
+    details: "1629 Max Rating",
+    icon: SiCodechef,
+    bg: "#EEC048",
   },
 ];
 
 export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-  "We use process design to create digital products. Besides that also help their business",
+  "I will help you with finding a solution and solve your problem.",
+  "We use latest frameworks and libraries to design and deploy our products.",
 ];
 
 export const workExp = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    place: "Alumni Cell , NIT Delhi",
+    tenure: "Oct 2022 - Present",
+    role: "Web Developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "As a part of Alumni Cell I have developed and designed a fully reponsive website for our college to reunite the college alumni and create awareness about various alumni events, During this we have used PHP,CSS & Figma to design & develop the website",
   },
   {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    place: "Startup Cell For Innovation & Entrepreneurship , NIT Delhi ",
+    tenure: "Oct 2022 - Present",
+    role: "Technical Lead",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
-  {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "As the lead of the tech team of the cell we have designed a fully responsive website based on Nextjs and Tailwind CSS as of now, Also we are working on the new website of BEATS event going to be held in our college",
   },
 ];
 
