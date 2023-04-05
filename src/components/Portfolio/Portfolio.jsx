@@ -18,14 +18,14 @@ const Portfolio = () => {
                 <span className='primaryText'>My Latest Works</span>
                 <p style={{marginTop:'10px'}}>Based on latest tech & frameworks</p>
             </div>
-            <span className="secondaryText">Explore More Works</span>
+            <a href='https://github.com/RohitBeniwal' target='_blank' className="secondaryText">Explore More Works</a>
         </div>
 
         {/* images */}
         <div className={`flexCenter ${css.showCase}`}>
-          <a href="google.com"><motion.img variants={fadeIn("up", "tween", .5, .6)} src="./showCase1.png" alt="project" /></a>
-          <a href="google.com"><motion.img variants={fadeIn("up", "tween", .7, .6)} src="./showCase2.png" alt="project" /></a>
-          <a href="google.com"><motion.img variants={fadeIn("up", "tween", .9, .6)} src="./showCase3.png" alt="project" /></a>
+          <a href="https://github.com/RohitBeniwal/Portfolio_Reactjs" target='_blank'><motion.img variants={fadeIn("up", "tween", .5, .6)} src="./showCase1.png" alt="project" /></a>
+          <a href="https://github.com/code-scannner/SCIE-Nextjs" target='_blank'><motion.img variants={fadeIn("up", "tween", .7, .6)} src="./showCase2.png" alt="project" /></a>
+          <a href="https://github.com/RohitBeniwal/BEATS-WEBSITE" target='_blank'><motion.img variants={fadeIn("up", "tween", .9, .6)} src="./showCase3.png" alt="project" /></a>
         
         </div>
         </div>
