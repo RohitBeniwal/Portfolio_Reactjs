@@ -26,6 +26,10 @@
 
         .right{
             flex: 1;
+            .socials{
+                gap: 1rem;
+                margin-bottom: 1rem;
+            }
             .menu{
 
                 @media (max-width: $sm){
@@ -37,8 +41,9 @@
                 flex-direction: column;
                 gap: 2rem;
                 list-style: none;
-                li{
-                    cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: blue;
                     &:hover{
                         color: $secondary;
 

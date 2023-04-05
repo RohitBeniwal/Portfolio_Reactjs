@@ -2,6 +2,10 @@ import React from 'react'
 import css from './Footer.module.scss'
 import { motion } from "framer-motion";
 import { footerVariants, staggerChildren } from '../../utils/motion';
+import {TiSocialLinkedinCircular} from 'react-icons/ti'
+import {BsGithub} from 'react-icons/bs'
+import {SiLinkedin} from 'react-icons/si'
+
 
 const Footer = () => {
   return (
@@ -24,14 +28,15 @@ const Footer = () => {
         </div>
 
         <div className={css.right}>
-            {/* <div className={css.socials}>
-                <span className="secondaryText"></span>
-            </div> */}
+            <div className={`flexCenter ${css.socials}`}>
+            <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><SiLinkedin size={"40px"} color='blue'/></a>
+            <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><BsGithub size={"40px"} color='black'/></a>
+            </div>
 
-            <div className={css.menu}>
-                <li>Services</li>
-                <li>Work</li>
-                <li>Experience</li>
+            <div className={`flexCenter ${css.menu}`}>
+                <a href='#experties'>Services</a>
+                <a href='#work'>Experience</a>
+                <a href='#portfolio'>Portfolio</a>
             </div>
         </div>
       </motion.div>

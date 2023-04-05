@@ -5,7 +5,7 @@ import {SiCodeforces,SiCodechef} from "react-icons/si"
 export const projectExperience = [
   {
     name: "Websites",
-    details: "5 Projects",
+    details: "16 Projects",
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },

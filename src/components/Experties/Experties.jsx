@@ -51,7 +51,7 @@ const Experties = () => {
               <span className="secondaryText">Live Projects</span>
             </div>
             <div className={`flexCenter ${css.stat}`}>
-              <span className="primaryText">300+</span>
+              <span className="primaryText">350+</span>
               <span className="secondaryText">problems solved</span>
             </div>
           </div>
