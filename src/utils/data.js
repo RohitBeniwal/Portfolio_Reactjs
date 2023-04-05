@@ -24,7 +24,7 @@ export const projectExperience = [
 ];
 
 export const WhatDoIHelp = [
-  "I will help you with finding a solution and solve your problem.",
+  "I will help you with finding a solution for your problem.",
   "We use latest frameworks and libraries to design and deploy our products.",
 ];
 
