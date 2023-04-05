@@ -2,7 +2,6 @@ import React from 'react'
 import css from './Footer.module.scss'
 import { motion } from "framer-motion";
 import { footerVariants, staggerChildren } from '../../utils/motion';
-import {TiSocialLinkedinCircular} from 'react-icons/ti'
 import {BsGithub} from 'react-icons/bs'
 import {SiLinkedin} from 'react-icons/si'
 
