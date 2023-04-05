@@ -1,17 +1,5 @@
-# Personal-Portfolio-2-starter-pack
-  * https://youtubebinjanportfolio.pages.dev
+This is my portfolio website based on Reactjs & Tailwind CSS.
 
-## Fonts link
-  * https://stijndv.com/fonts/Eudoxus-Sans.css
 
-## Slick slider links
-  * https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css
-  
-  * https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css
-  
-## NodeJS
-  * https://nodejs.org/en/download/
-  
-## Git
-  * https://git-scm.com/downloads
- 
+ ![showCase1](https://user-images.githubusercontent.com/96646591/229971747-24e55a38-d9df-4665-b755-cb260807a587.png)
+
