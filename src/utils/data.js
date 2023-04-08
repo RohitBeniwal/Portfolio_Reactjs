@@ -11,7 +11,7 @@ export const projectExperience = [
   },
   {
     name: "CODEFORCES",
-    details: "1112 Max Rating",
+    details: "1172 Max Rating",
     icon: SiCodeforces,
     bg: "#F26440",
   },
