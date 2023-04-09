@@ -3,7 +3,7 @@ import css from './Footer.module.scss'
 import { motion } from "framer-motion";
 import { footerVariants, staggerChildren } from '../../utils/motion';
 import {BsGithub} from 'react-icons/bs'
-import {SiLinkedin} from 'react-icons/si'
+import {SiLinkedin,SiCodeforces,SiCodechef,SiGeeksforgeeks,SiLeetcode} from 'react-icons/si'
 
 
 const Footer = () => {
@@ -30,6 +30,10 @@ const Footer = () => {
             <div className={`flexCenter ${css.socials}`}>
             <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><SiLinkedin size={"40px"} color='blue'/></a>
             <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><BsGithub size={"40px"} color='black'/></a>
+            <a href="https://codeforces.com/profile/Rohit_Beniwal" target="_blank"><SiCodeforces size={"40px"} color='red'/></a>
+            <a href="https://www.codechef.com/users/rohit_beniwal" target="_blank"><SiCodechef size={"40px"} color='brown'/></a>
+            <a href="https://auth.geeksforgeeks.org/user/beniwalrb177/" target="_blank"><SiGeeksforgeeks size={"40px"} color='green'/></a>
+            <a href="https://leetcode.com/Rohit_Beniwal/" target="_blank"><SiLeetcode size={"40px"} color='yellow'/></a>
             </div>
 
             <div className={`flexCenter ${css.menu}`}>

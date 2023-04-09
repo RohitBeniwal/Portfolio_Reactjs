@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import css from './Header.module.scss'
 import {BiMenuAltRight} from 'react-icons/bi'
-import {TiSocialLinkedinCircular} from 'react-icons/ti'
+import {BsGithub} from 'react-icons/bs'
+import {SiLinkedin,SiCodeforces,SiCodechef,SiGeeksforgeeks,SiLeetcode} from 'react-icons/si'
 import {motion} from 'framer-motion'
 import {getMenuStyles, headerVariants} from '../../utils/motion'
 import useHeaderShadow from "../../hooks/useHeaderShadow";
@@ -38,8 +39,29 @@ const header = () => {
                 <li><a href="#experties">Services</a></li>
                 <li><a href="#work">Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                
                 <li className={`flexCenter ${css.phone}`}>
-                  <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><TiSocialLinkedinCircular size={"40px"}/></a>
+            <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><SiLinkedin size={"40px"} color='blue'/></a>
+                   
+                </li>
+                <li className={`flexCenter ${css.phone}`}>
+            <a href="https://github.com/RohitBeniwal" target="_blank"><BsGithub size={"40px"} color='black'/></a>
+                   
+                </li>
+                <li className={`flexCenter ${css.phone}`}>
+            <a href="https://codeforces.com/profile/Rohit_Beniwal" target="_blank"><SiCodeforces size={"40px"} color='red'/></a>
+                   
+                </li>
+                <li className={`flexCenter ${css.phone}`}>
+            <a href="https://www.codechef.com/users/rohit_beniwal" target="_blank"><SiCodechef size={"40px"} color='brown'/></a>
+                   
+                </li>
+                <li className={`flexCenter ${css.phone}`}>
+            <a href="https://auth.geeksforgeeks.org/user/beniwalrb177/" target="_blank"><SiGeeksforgeeks size={"40px"} color='green'/></a>
+                   
+                </li>
+                <li className={`flexCenter ${css.phone}`}>
+            <a href="https://leetcode.com/Rohit_Beniwal/" target="_blank"><SiLeetcode size={"40px"} color='yellow'/></a>
                    
                 </li>
             </ul>
