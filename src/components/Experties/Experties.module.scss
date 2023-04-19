@@ -1,7 +1,7 @@
 @import "../../styles/contants.scss";
 
 .wrapper{
-    background: rgb(198, 236, 246);
+    background: #E9F1FA;
 
     .container{
         align-items: flex-start;
@@ -68,6 +68,14 @@
                 .stat{
                     flex-direction: column;
                     justify-content: flex-start;
+                }
+                .resume{
+                    background-color: rgb(57, 111, 249);
+                    border-radius: 10%;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    color: aliceblue;
+                    
                 }
             }
         }

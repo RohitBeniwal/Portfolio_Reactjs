@@ -3,6 +3,8 @@ import { projectExperience, WhatDoIHelp } from "../../utils/data";
 import css from "../Experties/Experties.module.scss";
 import {motion} from 'framer-motion';
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
+import resume from '../../../public/Rohit-Beniwal_Resume.pdf';
+import {HiDownload} from 'react-icons/hi';
 
 const Experties = () => {
   return (
@@ -51,9 +53,10 @@ const Experties = () => {
               <span className="secondaryText">Live Projects</span>
             </div>
             <div className={`flexCenter ${css.stat}`}>
-              <span className="primaryText">350+</span>
+              <span className="primaryText">400+</span>
               <span className="secondaryText">problems solved</span>
             </div>
+            <a className={`secondaryText flexCenter ${css.resume}`} href={resume} download="Resume">Resume{" "}{" "}<HiDownload color="blue"/></a>
           </div>
         </motion.div>
       </div>

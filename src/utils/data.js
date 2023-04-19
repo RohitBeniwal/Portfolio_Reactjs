@@ -1,12 +1,10 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { CiMobile1 } from "react-icons/ci";
-import { MdWorkspacesOutline } from "react-icons/md";
-import {SiCodeforces,SiCodechef} from "react-icons/si"
+import {SiCodeforces,SiCodechef,SiGeeksforgeeks} from "react-icons/si"
 export const projectExperience = [
   {
-    name: "Websites",
-    details: "16 Projects",
-    icon: HiOutlineDesktopComputer,
+    name: "GeekForGeeks",
+    details: "Institute Rank 7#",
+    icon: SiGeeksforgeeks,
     bg: "#286F6C",
   },
   {

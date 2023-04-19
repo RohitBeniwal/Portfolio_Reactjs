@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import { footerVariants, staggerChildren } from '../../utils/motion';
 import {BsGithub} from 'react-icons/bs'
 import {SiLinkedin,SiCodeforces,SiCodechef,SiGeeksforgeeks,SiLeetcode} from 'react-icons/si'
+import resume from '../../../public/Rohit-Beniwal_Resume.pdf';
+import {HiDownload} from 'react-icons/hi';
+
 
 
 const Footer = () => {
@@ -40,6 +43,8 @@ const Footer = () => {
                 <a href='#experties'>Services</a>
                 <a href='#work'>Experience</a>
                 <a href='#portfolio'>Portfolio</a>
+            <a className={`${css.resume}`} href={resume} download="Resume">Resume{" "}{" "}<HiDownload/></a>
+
             </div>
         </div>
       </motion.div>
