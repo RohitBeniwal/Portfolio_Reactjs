@@ -3,13 +3,13 @@ import {SiCodeforces,SiCodechef,SiGeeksforgeeks} from "react-icons/si"
 export const projectExperience = [
   {
     name: "GeekForGeeks",
-    details: "Institute Rank 118#",
+    details: "Institute Rank 114#",
     icon: SiGeeksforgeeks,
     bg: "#286F6C",
   },
   {
     name: "CODEFORCES",
-    details: "1173 Max Rating",
+    details: "1185 Max Rating",
     icon: SiCodeforces,
     bg: "#F26440",
   },
