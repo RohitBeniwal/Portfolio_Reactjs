@@ -56,7 +56,7 @@ const Experties = () => {
               <span className="primaryText">500+</span>
               <span className="secondaryText">problems solved</span>
             </div>
-            <a className={`secondaryText flexCenter ${css.resume}`} href={resume} download="Resume">Resume{" "}{" "}<HiDownload color="blue"/></a>
+            {/* <a className={`secondaryText flexCenter ${css.resume}`} href={resume} download="Resume">Resume{" "}{" "}<HiDownload color="blue"/></a> */}
           </div>
         </motion.div>
       </div>
