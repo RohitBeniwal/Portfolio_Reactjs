@@ -68,8 +68,9 @@
             left: 33%;
 
             img{
+                width: 32rem;
                 @media (max-width:$sm){
-                    width: 23rem;
+                    width: 29rem;
                 }
                 margin-bottom: -5px;
             }
