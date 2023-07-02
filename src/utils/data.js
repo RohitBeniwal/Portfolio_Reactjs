@@ -3,7 +3,7 @@ import {SiCodeforces,SiCodechef,SiGeeksforgeeks} from "react-icons/si"
 export const projectExperience = [
   {
     name: "GeekForGeeks",
-    details: "Institute Rank 102#",
+    details: "Institute Rank 96#",
     icon: SiGeeksforgeeks,
     bg: "#286F6C",
   },

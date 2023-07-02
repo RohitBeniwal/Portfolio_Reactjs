@@ -30,7 +30,7 @@ const header = () => {
     >
         <div className={`flexCenter innerWidth ${css.container}`}>
             <div className={css.name}>
-                Rohit Beniwal
+                <img src="signature.png" alt="" />
             </div>
             <ul
             ref={menuRef}
