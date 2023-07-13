@@ -46,6 +46,9 @@
                     margin-bottom: 1rem;
                     width: 3.5rem;
                 }
+                span{
+                    font-weight: bold;
+                }
             }
 
         }
@@ -69,7 +72,7 @@
             left: 33%;
 
             img{
-                width: 32rem;
+                width: 30rem;
                 @media (max-width:$sm){
                     width: 29rem;
                 }

@@ -56,8 +56,7 @@ const Hero = () => {
           variants={fadeIn("left","tween",0.5,1)}
           className={css.title}>
             <img src="./vite.png" alt="" />
-            <span>EXPERIENCED WEB DEVELOPER</span>
-            <span>& COMPETITIVE PROGRAMMER</span>
+            <span> COMPETITIVE PROGRAMMER</span>
           </motion.div>
         </div>
       </motion.div>

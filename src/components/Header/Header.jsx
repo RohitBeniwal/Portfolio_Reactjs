@@ -41,10 +41,6 @@ const header = () => {
                 <li><a href="#portfolio">Portfolio</a></li>
                 
                 <li className={`flexCenter ${css.phone}`}>
-            <a href="https://www.linkedin.com/in/rohit-beniwal-516748224/" target="_blank"><SiLinkedin size={"40px"} color='blue'/></a>
-                   
-                </li>
-                <li className={`flexCenter ${css.phone}`}>
             <a href="https://github.com/RohitBeniwal" target="_blank"><BsGithub size={"40px"} color='black'/></a>
                    
                 </li>
