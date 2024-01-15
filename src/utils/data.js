@@ -1,23 +1,23 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import {SiCodeforces,SiCodechef,SiGeeksforgeeks} from "react-icons/si"
+import { SiCodeforces, SiCodechef, SiLeetcode } from "react-icons/si";
 export const projectExperience = [
   {
-    name: "GeekForGeeks",
-    details: "Institute Rank 97#",
-    icon: SiGeeksforgeeks,
-    bg: "#286F6C",
+    name: "CODEFORCES",
+    details: "1271 Max Rating",
+    icon: SiCodeforces,
+    bg: "#B11F25",
   },
   {
-    name: "CODEFORCES",
-    details: "1268 Max Rating",
-    icon: SiCodeforces,
-    bg: "#F26440",
+    name: "Leetcode",
+    details: "1822 Max Rating",
+    icon: SiLeetcode,
+    bg: "#FFA116",
   },
   {
     name: "CODECHEF",
     details: "1626 Max Rating",
     icon: SiCodechef,
-    bg: "#EEC048",
+    bg: "#5A3219",
   },
 ];
 
@@ -28,18 +28,35 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
+    place: "Bosscoder Academy",
+    tenure: "SEP 2023 - OCT 2023",
+    role: "Software Engineer Intern",
+    detail1:
+    "• Developed React.js and Material UI-based user interface (UI) for Bosscoder Academy’s blogs page, ensuring an optimized and engaging user experience.",
+    detail2:
+    "• Applied Clean Architecture principles to enhance codebase readability and maintainability",
+    detail3:
+    "• Automated email-sending functionality using Amazon Simple Email Service (SES), leading to a substantial 30% increase in user engagement through personalized communication.",
+    detail4:
+    "• Collaborated on the creation of various Figma designs from inception, leveraging built-in AI tools to enhance the efficiency of the development team."
+  },
+  {
     place: "Alumni Cell , NIT Delhi",
-    tenure: "Oct 2022 - Present",
+    tenure: "Oct 2022 - AUG 2023",
     role: "Web Developer",
-    detail:
-      "As a part of Alumni Cell I have developed and designed a fully reponsive website for our college to reunite the college alumni and create awareness about various alumni events, During this we have used PHP,CSS & Figma to design & develop the website",
+    detail1:
+    "• Designed and developed dynamic and responsive cell websites using HTML, CSS, Bootstrap, JavaScript, and PHP.",
+    detail2:
+    "• Utilized Figma for design and conceptualization."
   },
   {
     place: "Startup Cell For Innovation & Entrepreneurship , NIT Delhi ",
-    tenure: "Oct 2022 - Present",
+    tenure: "Oct 2022 - Jun 2023",
     role: "Technical Lead",
-    detail:
-      "As the lead of the tech team of the cell we have designed a fully responsive website based on Nextjs and Tailwind CSS as of now, Also we are working on the new website of BEATS event going to be held in our college",
+    detail1:
+    "• Led the design and development of a responsive cell website using Next.js and Tailwind CSS to deliver an exceptional user experience",
+    detail2:
+    "• Developed the BEATS event website with HTML, CSS, Bootstrap, and JavaScript."
   },
 ];
 

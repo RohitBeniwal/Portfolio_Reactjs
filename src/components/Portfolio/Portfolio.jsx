@@ -23,9 +23,9 @@ const Portfolio = () => {
 
         {/* images */}
         <div className={`flexCenter ${css.showCase}`}>
-          <a href="https://github.com/RohitBeniwal/Portfolio_Reactjs" target='_blank'><motion.img variants={fadeIn("up", "tween", .5, .6)} src="./showCase1.png" alt="project" /></a>
-          <a href="https://github.com/code-scannner/SCIE-Nextjs" target='_blank'><motion.img variants={fadeIn("up", "tween", .7, .6)} src="./showCase2.png" alt="project" /></a>
-          <a href="https://github.com/RohitBeniwal/BEATS-WEBSITE" target='_blank'><motion.img variants={fadeIn("up", "tween", .9, .6)} src="./showCase3.png" alt="project" /></a>
+          <a href="https://rosoiride.vercel.app/" target='_blank'><motion.img variants={fadeIn("up", "tween", .5, .6)} src="./showCase1.png" alt="project" /></a>
+          <a href="https://nitdelhi.ac.in/SCIE/" target='_blank'><motion.img variants={fadeIn("up", "tween", .7, .6)} src="./showCase2.png" alt="project" /></a>
+          <a href="https://memehub47.netlify.app/" target='_blank'><motion.img variants={fadeIn("up", "tween", .9, .6)} src="./showCase3.png" alt="project" /></a>
         
         </div>
         </div>

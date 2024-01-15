@@ -46,7 +46,7 @@ const Hero = () => {
           <motion.div
           variants={fadeIn("right","tween",0.3,1)}
           className={css.projects}>
-            <div className="primaryText">15+</div>
+            <div className="primaryText">25+</div>
             <div className="secondaryText">
               <div>Web Development</div>
               <div>Projects</div>
