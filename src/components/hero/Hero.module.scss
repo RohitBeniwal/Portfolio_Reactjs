@@ -52,33 +52,132 @@
             }
 
         }
-        .person{
+        
+        .techVisualization{
             @media (max-width:$sm),(max-width:$md){
                 position: relative;
                 left: 0;
-                background-size: 20rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-position: bottom;
+                margin: 2rem 0;
             }
             position: absolute;
             bottom: -2rem;
+            left: 25%;
+            right: 25%;
             margin: auto;
-            background-image: url('../splash.png');
-            background-repeat: no-repeat;
-            background-size: 25rem;
-            background-position: 1%;
-            left: 33%;
 
-            img{
-                width: 30rem;
-                @media (max-width:$sm){
-                    width: 29rem;
+            .codeAnimation{
+                position: relative;
+                width: 100%;
+                max-width: 500px;
+                
+                .terminal{
+                    background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+                    border-radius: 12px;
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+                    overflow: hidden;
+                    backdrop-filter: blur(10px);
+                    border: 1px solid rgba(255,255,255,0.1);
+                    
+                    .terminalHeader{
+                        background: linear-gradient(90deg, #333 0%, #444 100%);
+                        padding: 12px 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid rgba(255,255,255,0.1);
+                        
+                        .terminalButtons{
+                            display: flex;
+                            gap: 8px;
+                            
+                            span{
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                
+                                &.red{ background: #ff5f56; }
+                                &.yellow{ background: #ffbd2e; }
+                                &.green{ background: #27ca3f; }
+                            }
+                        }
+                        
+                        .terminalTitle{
+                            color: #888;
+                            font-size: 12px;
+                            font-family: 'Courier New', monospace;
+                        }
+                    }
+                    
+                    .terminalBody{
+                        padding: 20px;
+                        font-family: 'Courier New', monospace;
+                        font-size: 14px;
+                        line-height: 1.6;
+                        
+                        .codeLine{
+                            margin-bottom: 8px;
+                            
+                            .prompt{
+                                color: #00ff41;
+                                margin-right: 8px;
+                            }
+                            
+                            .command{
+                                color: #ff6b6b;
+                                font-weight: 500;
+                            }
+                            
+                            .indent{
+                                color: #4ecdc4;
+                                margin-left: 16px;
+                            }
+                        }
+                    }
                 }
-                margin-bottom: -5px;
+                
+                .floatingElements{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    
+                    .floatingIcon{
+                        position: absolute;
+                        font-size: 24px;
+                        font-weight: bold;
+                        background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.3));
+                        
+                        &.icon1{
+                            top: -20px;
+                            right: -30px;
+                            font-size: 20px;
+                        }
+                        
+                        &.icon2{
+                            bottom: -20px;
+                            left: -30px;
+                            font-size: 18px;
+                        }
+                        
+                        &.icon3{
+                            top: 50%;
+                            right: -40px;
+                            font-size: 22px;
+                        }
+                    }
+                }
             }
         }
+        
         .email{
             @media (max-width:$sm){
                 position: relative;
