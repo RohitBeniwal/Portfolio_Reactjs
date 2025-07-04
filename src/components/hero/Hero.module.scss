@@ -2,6 +2,8 @@
 
 .wrapper{
     overflow: hidden;
+    background: var(--bg-primary);
+    transition: var(--transition-theme);
 
     .container{
         position: relative;
@@ -74,7 +76,8 @@
                     font-weight: bold;
                     font-size: 1.1rem;
                     line-height: 1.4;
-                    color: #ffffff;
+                    color: var(--text-primary);
+                    transition: var(--transition-theme);
                     max-width: 200px;
                 }
             }
@@ -285,7 +288,8 @@
             position: absolute;
             top: 50%;
             left: 0;
-            color: rgb(212, 5, 5);
+            color: var(--primary);
+            transition: var(--transition-theme);
         }
     }
 }

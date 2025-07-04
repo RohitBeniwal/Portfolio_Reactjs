@@ -108,7 +108,8 @@ const Background3D = () => {
       width: '100%',
       height: '100%',
       zIndex: -1,
-      background: 'linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%)'
+      background: 'var(--bg-primary)',
+      transition: 'var(--transition-theme)'
     }}>
       <Canvas
         camera={{ position: [0, 0, 10], fov: 75 }}

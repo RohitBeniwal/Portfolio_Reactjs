@@ -134,10 +134,7 @@ const GitHubProjects = () => {
     return (
       <motion.div
         className={css.projectCard}
-        initial={{ opacity: 0, y: 50, rotateX: -15 }}
-        whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: index * 0.1, duration: 0.8, type: "spring" }}
+        initial={{ opacity: 1, y: 0, rotateX: 0 }}
         whileHover={{ 
           scale: 1.05,
           rotateY: 5,
@@ -176,9 +173,7 @@ const GitHubProjects = () => {
               <motion.span
                 key={idx}
                 className={css.techBadge}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: (index * 0.1) + (idx * 0.05) }}
+                initial={{ opacity: 1, scale: 1 }}
                 whileHover={{ scale: 1.1 }}
               >
                 {tech}
@@ -209,18 +204,15 @@ const GitHubProjects = () => {
                 key={i}
                 className={css.particle}
                 style={{ backgroundColor: project.color }}
-                initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0.7, scale: 0.7 }}
                 animate={{ 
-                  opacity: [0, 1, 0],
-                  scale: [0, 1, 0],
-                  x: [0, Math.random() * 100 - 50],
-                  y: [0, Math.random() * 100 - 50]
+                  x: Math.random() * 60 - 30,
+                  y: Math.random() * 60 - 30
                 }}
                 transition={{
-                  duration: 2,
-                  delay: i * 0.1,
+                  duration: 3,
                   repeat: Infinity,
-                  repeatDelay: 1
+                  repeatType: "reverse"
                 }}
               />
             ))}
@@ -240,17 +232,11 @@ const GitHubProjects = () => {
   return (
     <motion.section
       className={css.githubProjectsSection}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 1 }}
     >
       <motion.div
         className={css.sectionHeader}
-        initial={{ y: -50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+        initial={{ opacity: 1 }}
       >
         <h2 className={css.title}>
           <span className={css.glitch} data-text="GITHUB PROJECTS">GITHUB PROJECTS</span>
@@ -282,10 +268,7 @@ const GitHubProjects = () => {
 
       <motion.div
         className={css.viewMoreSection}
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        initial={{ opacity: 1 }}
       >
         <motion.a
           href="https://github.com/rohitbeniwal"

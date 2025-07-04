@@ -15,6 +15,9 @@
   --bg-card: rgba(255, 255, 255, 0.8);
   --bg-header: rgba(255, 255, 255, 0.95);
   
+  // Primary color in RGB format for animations
+  --primary-rgb: 13, 47, 63;
+  
   // Text colors
   --text-primary: #0D2F3F;
   --text-secondary: #286F6C;
@@ -54,6 +57,9 @@
   --bg-tertiary: #2a2f3e;
   --bg-card: rgba(26, 31, 46, 0.8);
   --bg-header: rgba(26, 31, 46, 0.95);
+  
+  // Primary color in RGB format for animations
+  --primary-rgb: 135, 206, 235;
   
   // Text colors
   --text-primary: #e5f5fe;

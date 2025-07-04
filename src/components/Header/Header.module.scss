@@ -21,10 +21,48 @@
             font-weight: 500;
             color: var(--text-secondary);
             transition: var(--transition-theme);
-            img{
-                width: 75%;
-                filter: brightness(1);
+            position: relative;
+            
+            .logo {
+                width: 85%;
                 transition: var(--transition-theme);
+                filter: brightness(1);
+                transform: scale(1);
+                animation: colorPulse 5s infinite alternate;
+                
+                &:hover {
+                    transform: scale(1.05);
+                    filter: brightness(1.1) contrast(1.1) drop-shadow(0 0 10px rgba(var(--primary-rgb), 0.5));
+                }
+                
+                [data-theme="dark"] & {
+                    filter: brightness(10) invert(0.8);
+                    animation: colorPulseDark 5s infinite alternate;
+                }
+            }
+            
+            @keyframes colorPulse {
+                0% {
+                    filter: brightness(1) drop-shadow(0 0 5px rgba(var(--primary-rgb), 0.3));
+                }
+                50% {
+                    filter: brightness(1.1) drop-shadow(0 0 12px rgba(var(--primary-rgb), 0.5));
+                }
+                100% {
+                    filter: brightness(1.2) drop-shadow(0 0 15px rgba(var(--primary-rgb), 0.7));
+                }
+            }
+            
+            @keyframes colorPulseDark {
+                0% {
+                    filter: brightness(10) invert(0.8) drop-shadow(0 0 5px rgba(var(--primary-rgb), 0.3));
+                }
+                50% {
+                    filter: brightness(10) invert(0.8) drop-shadow(0 0 12px rgba(var(--primary-rgb), 0.5));
+                }
+                100% {
+                    filter: brightness(10) invert(0.8) drop-shadow(0 0 15px rgba(var(--primary-rgb), 0.7));
+                }
             }
         }
 

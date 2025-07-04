@@ -1,11 +1,8 @@
 .githubProjectsSection {
   padding: 120px 0;
   position: relative;
-  background: linear-gradient(135deg, 
-    rgba(12, 12, 12, 0.98) 0%, 
-    rgba(26, 26, 46, 0.95) 30%,
-    rgba(22, 33, 62, 0.98) 70%,
-    rgba(12, 12, 12, 0.98) 100%);
+  background: var(--bg-secondary);
+  transition: var(--transition-theme);
   overflow: hidden;
   
   &::before {
@@ -66,13 +63,13 @@
       }
       
       &::before {
-        animation: glitch-1 2.5s infinite;
+        animation: glitch-1 8s ease-in-out infinite;
         color: #667eea;
         z-index: -1;
       }
       
       &::after {
-        animation: glitch-2 2.5s infinite;
+        animation: glitch-1 8s ease-in-out infinite reverse;
         color: #ff6b6b;
         z-index: -2;
       }
@@ -81,13 +78,14 @@
 
   .subtitle {
     font-size: 1.6rem;
-    color: #b0b0b0;
+    color: var(--text-secondary);
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: var(--transition-theme);
   }
 
   .statsBar {
@@ -111,10 +109,11 @@
       
       .statLabel {
         font-size: 0.9rem;
-        color: #888;
+        color: var(--text-tertiary);
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-top: 8px;
+        transition: var(--transition-theme);
       }
     }
   }
@@ -132,16 +131,16 @@
 }
 
 .projectCard {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-card);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-primary);
   border-radius: 25px;
   padding: 30px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   perspective: 1000px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: var(--transition-theme), transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   
   &::before {
     content: '';
@@ -254,17 +253,18 @@
     .projectName {
       font-size: 1.5rem;
       font-weight: 700;
-      color: #ffffff;
+      color: var(--text-primary);
       margin-bottom: 12px;
-      transition: all 0.3s ease;
+      transition: var(--transition-theme);
       font-family: 'Courier New', monospace;
     }
 
     .projectDescription {
-      color: #b0b0b0;
+      color: var(--text-secondary);
       line-height: 1.6;
       margin-bottom: 20px;
       font-size: 0.95rem;
+      transition: var(--transition-theme);
     }
 
     .highlights {
@@ -332,14 +332,14 @@
       align-items: center;
       gap: 8px;
       padding: 10px 20px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: var(--bg-card);
+      border: 1px solid var(--border-primary);
       border-radius: 25px;
-      color: #ffffff;
+      color: var(--text-primary);
       text-decoration: none;
       font-weight: 600;
       font-size: 0.85rem;
-      transition: all 0.3s ease;
+      transition: var(--transition-theme), transform 0.3s ease;
       backdrop-filter: blur(10px);
 
       .linkIcon {
@@ -459,19 +459,12 @@
 
 @keyframes glitch-1 {
   0%, 100% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(-1px, -1px); }
+  75% { transform: translate(1px, 1px); }
 }
 
-@keyframes glitch-2 {
-  0%, 100% { transform: translate(0); }
-  20% { transform: translate(2px, -2px); }
-  40% { transform: translate(2px, 2px); }
-  60% { transform: translate(-2px, -2px); }
-  80% { transform: translate(-2px, 2px); }
-}
+/* Removed glitch-2 animation as we're now using glitch-1 with reverse for both effects */
 
 @keyframes iconBounce {
   0%, 100% {

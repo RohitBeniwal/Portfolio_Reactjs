@@ -1,6 +1,0 @@
-server_name,host,port,admin_user,admin_password,database
-Production DB,prod-db.example.com,3306,admin,admin123,myapp
-Staging DB,staging-db.example.com,3306,root,root123,myapp
-Development DB,dev-db.example.com,3306,devuser,dev123,myapp
-Test DB,test-db.example.com,3306,testadmin,test123,myapp
-Backup DB,backup-db.example.com,3306,backup_admin,backup123,myapp
