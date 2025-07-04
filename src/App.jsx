@@ -8,6 +8,7 @@ import Background3D from "./components/Background3D/Background3D";
 import CustomCursor from "./components/CustomCursor/CustomCursor";
 import AchievementsVisualization from "./components/AchievementsVisualization/AchievementsVisualization";
 import Skills3D from "./components/Skills3D/Skills3D";
+import GitHubProjects from "./components/GitHubProjects/GitHubProjects";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import css from "./styles/app.module.scss";
 
@@ -21,11 +22,12 @@ const App = () => {
         {/* AI-Inspired Custom Cursor */}
         <CustomCursor />
         
-        {/* Main Content */}
+        {/* Main Content - Optimized Flow */}
         <Header/>
         <Hero/>
         <AchievementsVisualization />
         <Skills3D />
+        <GitHubProjects />
         <Experties/>
         <Works/>
         <Portfolio/>
