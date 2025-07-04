@@ -1,30 +1,5 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { SiCodeforces, SiCodechef, SiLeetcode } from "react-icons/si";
-export const projectExperience = [
-  {
-    name: "CODEFORCES",
-    details: "1271 Max Rating",
-    icon: SiCodeforces,
-    bg: "#B11F25",
-  },
-  {
-    name: "Leetcode",
-    details: "1822 Max Rating",
-    icon: SiLeetcode,
-    bg: "#FFA116",
-  },
-  {
-    name: "CODECHEF",
-    details: "1626 Max Rating",
-    icon: SiCodechef,
-    bg: "#5A3219",
-  },
-];
-
-export const WhatDoIHelp = [
-  "I will help you with finding a solution for your problem.",
-  "We use latest frameworks and libraries to design and deploy our products.",
-];
+import { SiCodeforces, SiLeetcode, SiPython, SiReact, SiNodedotjs, SiMongodb, SiAmazonaws, SiTensorflow, SiDocker, SiPytorch, SiJavascript, SiTypescript, SiHtml5, SiCss3, SiTailwindcss, SiNextdotjs, SiGit } from "react-icons/si";
 
 export const workExp = [
   {
@@ -176,3 +151,29 @@ export const sliderSettings = {
     },
   ],
 };
+
+export const techSkills = [
+  { name: 'Python', icon: SiPython, color: '#3776ab', position: [-3, 2, 0], delay: 0 },
+  { name: 'PyTorch', icon: SiPytorch, color: '#ee4c2c', position: [0, 3, -1], delay: 1 },
+  { name: 'React', icon: SiReact, color: '#61dafb', position: [3, 2, 0], delay: 2 },
+  { name: 'Node.js', icon: SiNodedotjs, color: '#339933', position: [-2, 0, 1], delay: 3 },
+  { name: 'MongoDB', icon: SiMongodb, color: '#47a248', position: [2, 0, 1], delay: 4 },
+  { name: 'AWS', icon: SiAmazonaws, color: '#ff9900', position: [0, -2, 0], delay: 5 },
+  { name: 'TensorFlow', icon: SiTensorflow, color: '#ff6f00', position: [-1, 1, 2], delay: 6 },
+  { name: 'Docker', icon: SiDocker, color: '#2496ed', position: [1, 1, 2], delay: 7 },
+  { name: 'JavaScript', icon: SiJavascript, color: '#f7df1e', position: [-3, -1, 1], delay: 8 },
+  { name: 'TypeScript', icon: SiTypescript, color: '#3178c6', position: [3, -1, 1], delay: 9 },
+  { name: 'HTML5', icon: SiHtml5, color: '#e34f26', position: [-2, -2, 0], delay: 10 },
+  { name: 'CSS3', icon: SiCss3, color: '#1572b6', position: [2, -2, 0], delay: 11 },
+  { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#38b2ac', position: [0, 1, -2], delay: 12 },
+  { name: 'Next.js', icon: SiNextdotjs, color: '#000000', position: [0, -1, -2], delay: 13 },
+  { name: 'Git', icon: SiGit, color: '#f05032', position: [0, 0, 3], delay: 14 },
+];
+
+export const techCategories = [
+  { name: 'Languages', skills: ['Python', 'JavaScript', 'TypeScript'] },
+  { name: 'Frontend', skills: ['React', 'HTML5', 'CSS3', 'Tailwind CSS', 'Next.js'] },
+  { name: 'Backend', skills: ['Node.js', 'MongoDB'] },
+  { name: 'AI/ML', skills: ['PyTorch', 'TensorFlow'] },
+  { name: 'DevOps', skills: ['Docker', 'AWS', 'Git'] },
+];

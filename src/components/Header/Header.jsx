@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import css from './Header.module.scss'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {BsGithub} from 'react-icons/bs'
-import {SiLinkedin,SiCodeforces,SiCodechef,SiGeeksforgeeks,SiLeetcode} from 'react-icons/si'
+import {SiLinkedin,SiCodeforces,SiGeeksforgeeks,SiLeetcode} from 'react-icons/si'
 import {motion} from 'framer-motion'
 import {getMenuStyles, headerVariants} from '../../utils/motion'
 import useHeaderShadow from "../../hooks/useHeaderShadow";
@@ -31,7 +31,7 @@ const header = () => {
     >
         <div className={`flexCenter innerWidth ${css.container}`}>
             <div className={css.name}>
-                <img src="signature.png" alt="" />
+                <img src={"signature.png"} alt="Rohit Beniwal" className={css.logo} />
             </div>
             <ul
             ref={menuRef}
@@ -49,10 +49,7 @@ const header = () => {
             <a href="https://codeforces.com/profile/Rohit_Beniwal" target="_blank"><SiCodeforces size={"40px"} color='red'/></a>
                    
                 </li>
-                <li className={`flexCenter ${css.phone}`}>
-            <a href="https://www.codechef.com/users/rohit_beniwal" target="_blank"><SiCodechef size={"40px"} color='brown'/></a>
-                   
-                </li>
+
                 <li className={`flexCenter ${css.phone}`}>
             <a href="https://auth.geeksforgeeks.org/user/beniwalrb177/" target="_blank"><SiGeeksforgeeks size={"40px"} color='green'/></a>
                    
