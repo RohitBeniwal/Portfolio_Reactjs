@@ -1,7 +1,94 @@
 @import './contants.scss';
 
+// Theme CSS Custom Properties
+:root {
+  --transition-theme: all 0.3s ease;
+}
+
+// Light Theme Variables
+:root,
+[data-theme="light"] {
+  // Background colors
+  --bg-primary: rgb(229, 249, 254);
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f8f9fa;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-header: rgba(255, 255, 255, 0.95);
+  
+  // Text colors
+  --text-primary: #0D2F3F;
+  --text-secondary: #286F6C;
+  --text-tertiary: #666666;
+  --text-light: #888888;
+  
+  // Border colors
+  --border-primary: #e0e0e0;
+  --border-secondary: #f0f0f0;
+  
+  // Shadow colors
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-strong: rgba(0, 0, 0, 0.25);
+  
+  // Theme toggle specific
+  --theme-toggle-bg: rgba(255, 255, 255, 0.2);
+  --theme-toggle-border: rgba(255, 255, 255, 0.3);
+  --theme-toggle-hover-bg: rgba(255, 255, 255, 0.3);
+  --theme-toggle-hover-border: rgba(255, 255, 255, 0.5);
+  --theme-toggle-icon: #0D2F3F;
+  --theme-toggle-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --theme-toggle-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  --theme-toggle-focus-shadow: 0 0 0 3px rgba(13, 47, 63, 0.3);
+  
+  // Tooltip
+  --tooltip-bg: #333333;
+  --tooltip-text: #ffffff;
+  --tooltip-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Dark Theme Variables
+[data-theme="dark"] {
+  // Background colors
+  --bg-primary: #0a0f1c;
+  --bg-secondary: #1a1f2e;
+  --bg-tertiary: #2a2f3e;
+  --bg-card: rgba(26, 31, 46, 0.8);
+  --bg-header: rgba(26, 31, 46, 0.95);
+  
+  // Text colors
+  --text-primary: #e5f5fe;
+  --text-secondary: #87ceeb;
+  --text-tertiary: #a0a0a0;
+  --text-light: #888888;
+  
+  // Border colors
+  --border-primary: #3a3f4e;
+  --border-secondary: #2a2f3e;
+  
+  // Shadow colors
+  --shadow-light: rgba(0, 0, 0, 0.3);
+  --shadow-medium: rgba(0, 0, 0, 0.4);
+  --shadow-strong: rgba(0, 0, 0, 0.6);
+  
+  // Theme toggle specific
+  --theme-toggle-bg: rgba(0, 0, 0, 0.2);
+  --theme-toggle-border: rgba(255, 255, 255, 0.2);
+  --theme-toggle-hover-bg: rgba(0, 0, 0, 0.3);
+  --theme-toggle-hover-border: rgba(255, 255, 255, 0.3);
+  --theme-toggle-icon: #87ceeb;
+  --theme-toggle-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --theme-toggle-hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  --theme-toggle-focus-shadow: 0 0 0 3px rgba(135, 206, 235, 0.3);
+  
+  // Tooltip
+  --tooltip-bg: #f0f0f0;
+  --tooltip-text: #333333;
+  --tooltip-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
 .bg-primary {
-  background: rgb(229, 249, 254);
+  background: var(--bg-primary);
+  transition: var(--transition-theme);
 }
 
 .innerWidth {
@@ -109,6 +196,8 @@
   }
   font-size: 3rem;
   font-weight: bold;
+  color: var(--text-primary);
+  transition: var(--transition-theme);
 }
 
 .secondaryText {
@@ -118,7 +207,9 @@
   }
   line-height: 50px;
   font-size: 1.3rem;
-  font-weight: 500
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: var(--transition-theme);
 }
 .anchor {
   display: block;

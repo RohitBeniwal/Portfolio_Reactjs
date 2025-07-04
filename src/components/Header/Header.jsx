@@ -7,6 +7,7 @@ import {motion} from 'framer-motion'
 import {getMenuStyles, headerVariants} from '../../utils/motion'
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 import useOutsideAlerter from '../../hooks/useOutsideAlerter';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const header = () => {
 
@@ -59,6 +60,9 @@ const header = () => {
                 <li className={`flexCenter ${css.phone}`}>
             <a href="https://leetcode.com/Rohit_Beniwal/" target="_blank"><SiLeetcode size={"40px"} color='yellow'/></a>
                    
+                </li>
+                <li className={`flexCenter ${css.themeToggleItem}`}>
+                    <ThemeToggle />
                 </li>
             </ul>
 
