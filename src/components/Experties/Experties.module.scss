@@ -1,7 +1,8 @@
 @import "../../styles/contants.scss";
 
 .wrapper{
-    background: #E9F1FA;
+    background: var(--bg-secondary);
+    transition: var(--transition-theme);
 
     .container{
         align-items: flex-start;
@@ -18,15 +19,17 @@
             .exp{
                 display: flex;
                 align-items: center;
-                border: 1px solid $secondary-white;
+                border: 1px solid var(--border-primary);
+                background: var(--bg-card);
                 border-radius: 20px;
                 padding: 1.5rem;
                 gap: 2rem;
-                transition: all 200ms ease-out;
+                transition: all 300ms ease;
 
                 &:hover{
                     cursor: pointer;
-                    box-shadow: 0px 21px 13px rgba(0,0,0,0.04);
+                    box-shadow: var(--shadow-medium);
+                    transform: translateY(-2px);
                 }
 
                 //icon circles
@@ -44,10 +47,16 @@
                     gap: 1rem;
 
                     >:nth-child(1){
-                    font-size: 1.6rem;
-                    font-weight: bold;
-                }
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        color: var(--text-primary);
+                        transition: var(--transition-theme);
+                    }
 
+                    >:nth-child(2){
+                        color: var(--text-tertiary);
+                        transition: var(--transition-theme);
+                    }
                 }
 
                 
@@ -70,12 +79,17 @@
                     justify-content: flex-start;
                 }
                 .resume{
-                    background-color: rgb(57, 111, 249);
+                    background-color: var(--text-secondary);
                     border-radius: 10%;
                     padding-left: 1rem;
                     padding-right: 1rem;
-                    color: aliceblue;
+                    color: var(--bg-primary);
+                    transition: var(--transition-theme);
                     
+                    &:hover {
+                        background-color: var(--text-primary);
+                        transform: translateY(-2px);
+                    }
                 }
             }
         }
