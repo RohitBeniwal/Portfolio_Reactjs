@@ -28,10 +28,10 @@ const Works = () => {
                   </div>
                   <div className={css.role}>
                   <h1>{exp.role}</h1>
-                    <p>{exp.detail1}</p>
-                    <p>{exp.detail2}</p>
-                    <p>{exp.detail3}</p>
-                    <p>{exp.detail4}</p>
+                    {exp.detail1 && <p>{exp.detail1}</p>}
+                    {exp.detail2 && <p>{exp.detail2}</p>}
+                    {exp.detail3 && <p>{exp.detail3}</p>}
+                    {exp.detail4 && <p>{exp.detail4}</p>}
                   </div>
                 </motion.div>
               })
@@ -39,9 +39,9 @@ const Works = () => {
         <motion.div variants={zoomIn(1,1)} className={css.progressbar}>
           <motion.div variants={fadeIn('down','tween',3,1.5)} className={css.line}>
           </motion.div >
-            <div><div className={css.circle} style={{background: "#286F6C"}}></div></div>
-            <div><div className={css.circle} style={{background: "#F2704E"}}></div></div>
-            <div><div className={css.circle} style={{background: "#FFFF00"}}></div></div>
+            <div><div className={css.circle}></div></div>
+            <div><div className={css.circle}></div></div>
+            <div><div className={css.circle}></div></div>
         </motion.div>
         </div>
 
