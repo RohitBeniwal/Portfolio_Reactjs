@@ -28,17 +28,30 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
+    place: "BlackRock",
+    tenure: "Jan 2025 – Present",
+    role: "Application Engineer Intern",
+    detail1:
+    "• Built modular Python ETL pipelines to process 10M+ Sybase records into Snowflake, using multi-threaded ingestion and SQLAlchemy ORM for performance and reusability.",
+    detail2:
+    "• Ensured 99% unit test coverage using unittest and pytest, strengthening code reliability in the compliance pipeline.",
+    detail3:
+    "• Created Power BI dashboards on top of Snowflake for real-time compliance insights, enhancing visibility for internal teams.",
+    detail4:
+    ""
+  },
+  {
     place: "Bosscoder Academy",
-    tenure: "SEP 2023 - OCT 2023",
+    tenure: "SEP 2023 – OCT 2023",
     role: "Software Engineer Intern",
     detail1:
-    "• Developed React.js and Material UI-based user interface (UI) for Bosscoder Academy’s blogs page, ensuring an optimized and engaging user experience.",
+    "• Built a React.js interface using Material UI, enhancing UI performance and accessibility for Bosscoder Academy's blog page.",
     detail2:
-    "• Applied Clean Architecture principles to enhance codebase readability and maintainability",
+    "• Integrated Amazon SES for automated, personalized emails, driving a 30% increase in user engagement.",
     detail3:
-    "• Automated email-sending functionality using Amazon Simple Email Service (SES), leading to a substantial 30% increase in user engagement through personalized communication.",
+    "• Enhanced UI/UX workflows by leveraging Figma's AI tools to accelerate design iteration and streamline front-end development.",
     detail4:
-    "• Collaborated on the creation of various Figma designs from inception, leveraging built-in AI tools to enhance the efficiency of the development team."
+    ""
   },
   {
     place: "Alumni Cell , NIT Delhi",

@@ -21,8 +21,30 @@
                     
                 }
 
+                .post{
+                    h1 {
+                        color: var(--text-primary);
+                        transition: var(--transition-theme);
+                    }
+                    
+                    p {
+                        color: var(--text-tertiary);
+                        transition: var(--transition-theme);
+                    }
+                }
+
                 .role{
                     margin-left: 2rem;
+                    
+                    h1 {
+                        color: var(--text-primary);
+                        transition: var(--transition-theme);
+                    }
+                    
+                    p {
+                        color: var(--text-tertiary);
+                        transition: var(--transition-theme);
+                    }
                 }
             }
             .progressbar{
@@ -37,14 +59,14 @@
                     position: absolute;
                     height: 92%;
                     width: 2px;
-                    background-image: linear-gradient(black 33%,rgba(255,255,255,0) 0%);
+                    background-image: linear-gradient(var(--text-tertiary) 33%, rgba(255,255,255,0) 0%);
                     background-position: right;
                     background-size: 2px 30px;
                     background-repeat: repeat-y;
                     left: 48%;
                     z-index: 1;
                     border-radius: 5px;
-                    
+                    transition: var(--transition-theme);
                 }
 
                 >div{
@@ -54,10 +76,10 @@
                     
                     .circle{
                         border-radius: 50%;
-                        background: black;
+                        background: var(--text-primary);
                         width: 1.2rem;
                         height: 1.2rem;
-                       
+                        transition: var(--transition-theme);
                     }
                 }
             }
